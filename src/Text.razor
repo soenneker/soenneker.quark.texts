@@ -1,5 +1,9 @@
 @inherits Soenneker.Quark.Components.Element
 
 <span @attributes="BuildAttributes()">
-	@ChildContent
+    @ChildContent
 </span>
+
+@code {
+    public override string? Name { get; set; } = "Text";
+}
